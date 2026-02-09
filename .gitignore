@@ -1,41 +1,37 @@
-# Prerequisites
-*.d
-
-# Compiled Object files
-*.slo
-*.lo
+# --- Compiled Binaries & Objects ---
+# Derlenmiş çalıştırılabilir dosyalar ve nesne dosyaları GitHub'a yüklenmez.
+recommender
+recommender.exe
 *.o
 *.obj
-
-# Precompiled Headers
-*.gch
-*.pch
-
-# Linker files
-*.ilk
-
-# Debugger Files
-*.pdb
-
-# Compiled Dynamic libraries
-*.so
-*.dylib
-*.dll
-
-# Fortran module files
-*.mod
-*.smod
-
-# Compiled Static libraries
-*.lai
-*.la
-*.a
-*.lib
-
-# Executables
-*.exe
 *.out
-*.app
+*.exe
 
-# debug information files
-*.dwo
+# --- Large Data Files ---
+# Milyonlarca satırlık CSV ve TXT dosyaları GitHub limitlerini aşabilir. [cite: 94]
+# Bu dosyaları yerelde tutmak, GitHub'a ise sadece örnek (sample) hallerini yüklemek en iyisidir.
+*.csv
+*.txt
+*.log
+
+# İstisna: Eğer data klasöründeki küçük örnek dosyaları yüklemek istersen 
+# aşağıdaki satırların başındaki '#' işaretini kaldırabilirsin:
+# !data/training_data.csv
+# !data/test_data.csv
+
+# --- IDE Specific Files ---
+# Kişisel geliştirme ortamı ayarların (VS Code, CLion, Visual Studio vb.)
+.vscode/
+.idea/
+*.iml
+.vs/
+out/
+build/
+cmake-build-debug/
+cmake-build-release/
+
+# --- OS Metadata ---
+# İşletim sisteminin oluşturduğu gereksiz gizli dosyalar.
+.DS_Store
+Thumbs.db
+desktop.ini
